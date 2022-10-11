@@ -1,0 +1,22 @@
+---Create a store database
+
+Create Table animals (id Integer primary key, name TEXT, Quantity Integer,price Integer);
+
+Insert into animals Values(1, "hermit crab", 8,30);
+Insert into animals Values(2,"hedgehog",3,200);
+Insert into animals Values(3,"guinea pig", 16, 50);
+Insert into animals Values(4,"tortoise",1,300);
+Insert into animals Values(5, "bird", 1,800);
+Insert into animals Values (6, "chameleon", 2, 100);
+Insert into animals Values (7, "snake", 4, 60);
+Insert into animals Values (8,"frog", 10, 30);
+
+--Display database order by price
+
+Select * from animals 
+Order by Price desc;
+
+--What is the average cost of animal in the store? 
+Select AVG(price) From Animals 
+
+
